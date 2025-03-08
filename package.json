@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Will6363/field-rotation-search/issues"
   },
-  "homepage": "https://github.com/Will6363/field-rotation-search#readme"
+  "homepage": "https://github.com/Will6363/field-rotation-search#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
