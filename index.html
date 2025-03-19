@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Rotation Assistant</title>
+</head>
+<body>
+    <!-- Input Space -->
+    <h1>Field Rotation Assistant</h1>
+    <h2>User Params</h2>
+    <form action="/config.js">
+        <!-- Time / Date target input with option for current -->
+        <label for="time">Time in UTC</label>
+        <input type="time" name="time" id="time-input">
+        <br>
+        <label for="date">Date in YYYY-MM-DD</label>
+        <input type="date" name="date" id="date-input">
+        <br>
+        <!-- Location LONG/LAT maybe height maybe auto get from device -->
+        <!-- TODO - Split and Label with Deg/Min/Sec maybe with table maybe as custom component -->
+        <label for="LAT_deg">Latitude</label>
+        <input type="number" name="LAT_deg" id="lat-deg-input" min="-90" max="90">
+        <br>
+        <label for="LONG_deg">Longitude</label>
+        <input type="number" name="LONG_deg" id="long-deg-input" min="0" max="360">
+        <br>
+        <!-- Options Auto dropdown On Obj search -->
+        <label for="obj_search">Object</label>
+        <input type="obj_search" placeholder="Messier, IC, NGC"></input>
+        <br>
+        <!-- Altitude Limit maybe -->
+        <label for="Altitude_deg">Altitude</label>
+        <input type="number" name="Altitude_deg" id="alt-deg-input" min="0" max="90">
+        <br>
+        <!-- Angular Velocity Limit -->
+        <!-- Go Button -->
+        <br>
+        <input type="submit" value="Search!"></input>
+    </form>
+    <!-- Display Space for List or Options clickable redirect -->
+    <!-- Maybe items have graphic -->
+    <!-- Shows direction for items -->
+</body>
+</html>
